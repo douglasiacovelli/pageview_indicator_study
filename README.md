@@ -2,7 +2,18 @@
 
 ## Goal
 In this repository I'm trying to replicate instagram's pageview indicator style.
+
 Differently than [PageViewDotIndicator](https://github.com/douglasiacovelli/page_view_dot_indicator), which was implemented using a listview and therefore was more limited, this one I'm implementing using CustomPaint and ImplicitAnimations.
+
+## Next steps
+- [X] Draw dots
+- [X] Add animation to work as an implicitlyAnimatedWidget
+- [ ] Implement max dots visible on screen
+  - Ideas: clipping, drawing only the max visible, move the view, translate the dots
+- [ ] Make sure it's performant (like a listview would be if there were 100s of items)
+- [ ] Make the dots clickable
+- [ ] Allow for different shapes and expose more configuration parameters
+- [ ] Testing
 
 ## Learnings
 - It's a lot more math than I was expecting
