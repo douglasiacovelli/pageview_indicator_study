@@ -18,6 +18,7 @@ Differently than [PageViewDotIndicator](https://github.com/douglasiacovelli/page
 ## Learnings/Journal
 ### Aug, 06 - Part 1
 <img src="https://raw.githubusercontent.com/douglasiacovelli/pageview_indicator_study/main/journal/imgs/pageview_gif1.gif" />
+
 - It's a lot more math than I was expecting
 - ImplicitlyAnimatedWidget was the way to create a widget that animated on its own upon changing the currentPosition
 - I needed a function to get the distance between the currentPosition and current dot (i) being drawn translated into:
@@ -38,6 +39,7 @@ Differently than [PageViewDotIndicator](https://github.com/douglasiacovelli/page
 
 ### Aug, 06 - Part 2
 <img src="https://raw.githubusercontent.com/douglasiacovelli/pageview_indicator_study/main/journal/imgs/pageview_gif2.gif" />
+
 - Calculating the distance from the current dot to each one being drawn has been really helpful for many different things.
 - When animating things on canvas, everything has to be **continuous**, so it's a matter of finding the right mathematical function to achieve the desired effect. Therefore, writing ifs/elses to return value A or B is a NO go for this situation since it skips the transition steps.
 - Implementing the reduced dots has been really hard.
