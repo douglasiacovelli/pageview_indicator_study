@@ -38,6 +38,8 @@ Differently than [PageViewDotIndicator](https://github.com/douglasiacovelli/page
   - Because of this, the outer widget can receive discret values (0, 1, 2), while the inner widget (painter), can receive continuous (0.1, 0.2, 0.3...) translated by the tween.
 
 ### Aug, 06 - Part 2
+**Commit**: [5699e759273e77253c5333e31da08cf641b27cd3](https://github.com/douglasiacovelli/pageview_indicator_study/commit/5699e759273e77253c5333e31da08cf641b27cd3)
+
 <img src="https://raw.githubusercontent.com/douglasiacovelli/pageview_indicator_study/main/journal/imgs/pageview_gif2.gif" />
 
 - Calculating the distance from the current dot to each one being drawn has been really helpful for many different things.
