@@ -5,10 +5,11 @@ void main() {
   runApp(const MyApp());
 }
 
+const itemsCount = 10;
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
       body: Container(
         color: Colors.white,
         child: DotsWidget(
-          itemsCount: 5,
+          itemsCount: itemsCount,
           currentPosition: _currentPosition,
         ),
       ),
@@ -60,7 +61,7 @@ class _HomePageState extends State<HomePage> {
             child: const Icon(Icons.add),
             onPressed: () {
               setState(() {
-                if (_currentPosition < 4) {
+                if (_currentPosition < itemsCount-1) {
                   _currentPosition++;
                 }
               });

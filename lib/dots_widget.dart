@@ -14,7 +14,7 @@ class DotsWidget extends ImplicitlyAnimatedWidget {
   final int itemsCount;
   final double space;
   final selectedDiameter = 20.0;
-  final unselectedDiameter = 15.0;
+  final unselectedDiameter = 18.0;
 
   @override
   ImplicitlyAnimatedWidgetState<ImplicitlyAnimatedWidget> createState() {
@@ -48,7 +48,6 @@ class _DotsWidgetState extends AnimatedWidgetBaseState<DotsWidget> {
 
   @override
   void forEachTween(TweenVisitor<dynamic> visitor) {
-    debugPrint('forEachTween');
     _tween = visitor(
       _tween,
       widget.currentPosition,
